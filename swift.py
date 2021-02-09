@@ -139,10 +139,14 @@ def delete_task():
     response.headers['Content-Type'] = 'application/json'
     return json.dumps({'success': True})
 
+import platform
+print(platform.node())
+
 if PYTHONANYWHERE:
     application = default_app()
+elif platform.node() == 'ubuntu-s-1vcpu-1gb-nyc3-01':
+    if __name__ == "__main__":
+        run(host='localhost', port=6590, debug=True)
 else:
    if __name__ == "__main__":
        run(host='localhost', port=8080, debug=True)
-
-

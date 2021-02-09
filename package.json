@@ -1,0 +1,21 @@
+{
+  "name": "swe-swift",
+  "version": "1.0.0",
+  "description": "Education SWIFT web app",
+  "main": "index.js",
+  "scripts": {
+    "update": "git fetch && git pull && pm2 restart swift",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cseitz/swe-swift.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cseitz/swe-swift/issues"
+  },
+  "homepage": "https://github.com/cseitz/swe-swift#readme"
+}
